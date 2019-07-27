@@ -1,0 +1,23 @@
+@extends('layouts.my')
+@section('content')
+
+<ul data-role="listview">
+    <li><記事内容></li>
+</ul>
+<label for="text-1">タイトル</label>
+     <input type="text" name="text-1" id="text-1" value="">
+<label for="text-1">本文</label>
+<textarea type = "textarea" id = "txt"></textarea>
+
+<label for="text-1">添付ファイル</label>
+     <input type="file" name="名前" >
+
+<button class="ui-btn ui-btn-b" id="BTN02">投稿</button>
+
+<label for="text-1">lat</label>
+     <input type="text" name="text-1" id="text-1" value="" readonly="readonly">
+<label for="text-1">lon</label>
+    <input type="text" name="text-1" id="text-1" value="" readonly="readonly">
+<!-- GPS情報を取得して投稿する画面 --!>
+
+@endsection

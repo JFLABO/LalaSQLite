@@ -1,0 +1,84 @@
+CREATE DATABASE db_01;
+use db_01;
+CREATE TABLE IF NOT EXISTS fruit(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name VARCHAR(10),
+price INTEGER
+);
+
+UPDATE user SET authentication_string=password('root_passwd') WHERE user='root';
+grant all on *.* to dbuser@localhost identified by "pass";
+mysql> truncate table user;
+mysql> flush privileges;
+mysql> grant all privileges on *.* to root@localhost identified by 'root' with grant option;
+mysql> flush privileges;
+
+create table personal(id int, name varchar(20));
+
+create database daily;
+use daily;
+create table posts(
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (id),
+title text,
+body text,
+creation_time DATETIME,
+category text,
+lat text,
+lon text,
+created_at DATETIME,
+updated_at DATETIME
+);
+
+sqlite3
+create table posts(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title text,
+body text,
+creation_time DATETIME,
+category text,
+lat text,
+lon text,
+created_at DATETIME,
+updated_at DATETIME
+);
+
+insert into posts (
+  title,
+  body,
+  creation_time,
+  category,
+  lat,
+  lon
+)
+VALUES
+(  
+    'test',
+    'test',
+    '2018/09/03',
+    'rat',
+    '7',
+    '8'
+);
+
+create table images(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title text,
+body text,
+filename text,
+img blob,
+created_at DATETIME,
+updated_at DATETIME
+);
+
+create table image_twos(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title text,
+body text,
+filename text,
+img blob,
+created_at DATETIME,
+updated_at DATETIME
+);
+ALTER USER 'dbuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secret';
+FLUSH PRIVILEGES; 

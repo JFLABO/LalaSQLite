@@ -1,0 +1,13 @@
+@extends('layouts.my')
+
+@section('content')
+今日の経済指標<BR>
+<div id="bucketPane" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="title: 'Cesium'">
+    <iframe width="600" height="500" id="bucketFrame" src="Cesium/Apps/IF01.html" class="fullFrame" allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
+    <!--
+    <BR>  <span id="mess" style="float:right">AA</span> <BR>
+      <span id="DATA" style="float:right">AA</span><BR>
+      <span id="camera" style="float:right">AA</span>
+    -->
+</div>
+@endsection

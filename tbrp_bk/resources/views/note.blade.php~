@@ -1,0 +1,14 @@
+@extends('layout')
+
+@section('content')
+{{$user->name}}
+<button class="ui-btn ui-btn-b" id="BTN01">たびれぽ投稿</button>
+
+<ul data-role="listview">
+    <li><記事一覧</li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Ferrari</a></li>
+</ul>
+@endsection
