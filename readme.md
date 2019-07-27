@@ -1,4 +1,4 @@
-©GNU
+©GNU This was produced by Emacs
 
 昔、300MBまでしかDB(MySQL)が利用できない環境にいました。
 おっきいデータをファイルに書けばいいんじゃないかということで
